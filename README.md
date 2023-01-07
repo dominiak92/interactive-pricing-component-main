@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [LIVE SITE](https://your-live-site-url.com)
+- Live Site URL: [LIVE SITE](https://dominiak92.github.io/interactive-pricing-component-main/)
 
 ### Built with
 
