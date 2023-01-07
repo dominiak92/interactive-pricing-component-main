@@ -1,0 +1,43 @@
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  @include xl {
+    background-size: contain;
+    background-size: 105vw;
+
+  }
+  .fa-solid {
+    color: #10d8c4;
+    font-size: 10px;
+    margin-right: 16px;
+  }
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  margin-top: 89px;
+  margin-left: 25px;
+  margin-right: 25px;
+  &__bg-circles {
+    position: absolute;
+    z-index: -1;
+    width: 146px;
+    height: 145px;
+    top: -20px;
+    left: 91px;
+    @include xl {
+      left: 200px;
+    }
+  }
+}

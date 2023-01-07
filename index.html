@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/26ee321572.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="script.js" async></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <img class="page-wrapper__bg-circles" src="images/pattern-circles.svg" />
+      <header class="header">
+        <h1 class="header__title">Simple, traffic-based pricing</h1>
+        <div class="header-text-wrapper">
+          <p class="header__text">Sign-up for our 30-day trial.</p>
+          <p class="header__text2">No credit card required.</p>
+        </div>
+      </header>
+      <div class="component-wrapper">
+        <section class="slider">
+          <p class="slider__views">100K PAGEVIEWS</p>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider__slider"
+            id="myRange"
+          />
+          <div class="price-wrapper">
+            <h2 class="slider__price">$16.00</h2>
+            <div class="period-wrapper">
+              <p class="slider__slash">/</p>
+              <p class="slider__period">month<br />yearly</p>
+            </div>
+          </div>
+          <section class="duration">
+            <p class="duration__monthly">Monthly Billing</p>
+            <input type="checkbox" id="switch" /><label for="switch"
+              >Toggle</label
+            >
+            <p class="duration__yearly">Yearly Billing</p>
+            <div class="duration__discount--desktop">25% discount</div>
+            <div class="duration__discount">-25%</div>
+          </section>
+        </section>
+        <section class="benefits">
+          <div class="benefit-wrapper">
+            <p class="benefits__unlimited">
+              <i class="fa-solid fa-check"></i>Unlimited websites
+            </p>
+            <p class="benefits__ownership">
+              <i class="fa-solid fa-check"></i>100% data ownership
+            </p>
+            <p class="benefits__email">
+              <i class="fa-solid fa-check"></i>Email reports
+            </p>
+          </div>
+          <button class="benefits__button">Start my trial</button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

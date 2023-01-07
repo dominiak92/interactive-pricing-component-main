@@ -1,0 +1,51 @@
+.header {
+  width: 326px;
+  height: 81px;
+  @include xl {
+    width: 395px;
+    height: 145px;
+  }
+  &__title {
+    font-size: 20px;
+    text-align: center;
+    color: $black;
+    font-weight: 800;
+    @include xl {
+      font-size: 28px;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    margin: 0;
+    color: $gray;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    font-weight: 600;
+
+    @include xl {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  &__text2 {
+    font-size: 13px;
+    height: 23px;
+    color: $gray;
+    line-height: 23px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
+    @include xl{
+        margin-left: 3px;
+    }
+  }
+}
+.header-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include xl {
+        justify-content: center;
+        flex-direction: row;
+    }
+}
